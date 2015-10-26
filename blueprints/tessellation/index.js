@@ -12,21 +12,21 @@ module.exports = {
   afterInstall: function() {
     var app = this;
 
-    return app.addAddonToProject('atsjj/ember-cli-react', '0.14.2')
+    return app.addAddonToProject('atsjj/ember-cli-react', '0.14.3')
       .then(function() {
         return app.addBowerPackageToProject('d3', '^3.5.6');
       })
       .then(function() {
-        app.addBowerPackageToProject('moment', '^2.10.6');
+        return app.addBowerPackageToProject('moment', '^2.10.6');
       })
       .then(function() {
-        app.addBowerPackageToProject('moment-timezone', '^0.4.1');
+        return app.addBowerPackageToProject('moment-timezone', '^0.4.1');
       })
       .then(function() {
-        app.addBowerPackageToProject('reflux', '^0.3.0');
+        return app.addBowerPackageToProject('reflux', '^0.3.0');
       })
       .then(function() {
-        app.addBowerPackageToProject('tessellation-shims', 'atsjj/tessellation-shims#0.1.0');
+        return app.addBowerPackageToProject('tessellation-shims', 'atsjj/tessellation-shims#0.1.0');
       });
   }
 };
