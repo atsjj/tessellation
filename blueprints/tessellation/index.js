@@ -14,6 +14,9 @@ module.exports = {
 
     return app.addAddonToProject('atsjj/ember-cli-react', '0.14.3')
       .then(function() {
+        return app.addBowerPackageToProject('classnames', '^2.2.0');
+      })
+      .then(function() {
         return app.addBowerPackageToProject('d3', '^3.5.6');
       })
       .then(function() {
