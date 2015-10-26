@@ -5,7 +5,7 @@ import ListenerMixin from 'reflux/listener-mixin';
 import Timer from 'tessellation/components/timer';
 import mixin from 'tessellation/utilities/mixin';
 
-class Mozaik extends mixin(Component, ListenerMixin) {
+export default class extends mixin(Component, ListenerMixin) {
   getInitialState() {
     return {
       config: null
@@ -42,6 +42,4 @@ class Mozaik extends mixin(Component, ListenerMixin) {
       </div>
     );
   }
-});
-
-export default Mozaik;
+}

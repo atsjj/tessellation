@@ -3,7 +3,7 @@ import ComponentRegistry from 'tessellation/component-registry';
 import clone from 'tessellation/utilities/clone-object';
 import createElement from 'react/create-element';
 
-class Widget extends Component {
+export default class extends Component {
   render() {
     let { type, x, y, w, h } = this.props;
     let style = {
@@ -32,6 +32,4 @@ class Widget extends Component {
       </div>
     );
   }
-});
-
-export default Widget;
+}
