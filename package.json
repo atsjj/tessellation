@@ -42,7 +42,7 @@
     "ember-addon"
   ],
   "dependencies": {
-    "ember-cli-babel": "atsjj/ember-cli-babel#6ef72b5",
+    "ember-cli-babel": "atsjj/ember-cli-babel#6ef72b5"
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
