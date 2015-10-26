@@ -7,10 +7,10 @@ import createElement from 'react/create-element';
 import mixin from 'tessellation/utilities/mixin';
 
 export default class extends mixin(Component, ListenerMixin) {
-  getInitialState() {
-    return {
-      isCurrent: false
-    };
+  constructor() {
+    super();
+    this.render = this.render.bind(this);
+    this.state = { isCurrent: false };
   }
 
   componentWillMount() {

@@ -6,10 +6,10 @@ import Timer from 'tessellation/components/timer';
 import mixin from 'tessellation/utilities/mixin';
 
 export default class extends mixin(Component, ListenerMixin) {
-  getInitialState() {
-    return {
-      config: null
-    };
+  constructor() {
+    super();
+    this.render = this.render.bind(this);
+    this.state = { config: null };
   }
 
   componentWillMount() {
