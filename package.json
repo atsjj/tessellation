@@ -1,6 +1,6 @@
 {
   "name": "tessellation",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "The default blueprint for ember-cli addons.",
   "directories": {
     "doc": "doc",
@@ -42,8 +42,8 @@
   ],
   "dependencies": {
     "ember-cli-babel": "^5.1.3",
-    "ember-cli-jsx": "atsjj/ember-cli-jsx#48bd9c8",
-    "ember-cli-react": "atsjj/ember-cli-react#c5cb44e"
+    "ember-cli-jsx": "atsjj/ember-cli-jsx#0.1.1",
+    "ember-cli-react": "atsjj/ember-cli-react#0.14.4"
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
