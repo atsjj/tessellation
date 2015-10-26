@@ -1,8 +1,8 @@
 /* global require, module */
-var EmberApp = require('ember-cli/lib/broccoli/ember-addon');
+var ReactApp = require('ember-cli-react/lib/broccoli/react-addon');
 
 module.exports = function(defaults) {
-  var app = new EmberApp(defaults, {
+  var app = new ReactApp(defaults, {
     // Add options here
   });
 
