@@ -10,13 +10,23 @@ module.exports = {
   },
 
   afterInstall: function() {
-    return Promise.all([
-      this.addAddonToProject('atsjj/ember-cli-react', '0.14.1'),
-      this.addBowerPackageToProject('d3', '^3.5.6'),
-      this.addBowerPackageToProject('moment', '^2.10.6'),
-      this.addBowerPackageToProject('moment-timezone', '^0.4.1'),
-      this.addBowerPackageToProject('reflux', '^0.3.0'),
-      this.addBowerPackageToProject('tessellation-shims', 'atsjj/tessellation-shims#0.1.0')
-    ]);
+    var app = this;
+
+    return app.addAddonToProject('atsjj/ember-cli-react', '0.14.2')
+      .then(function() {
+        return app.addBowerPackageToProject('d3', '^3.5.6');
+      })
+      .then(function() {
+        app.addBowerPackageToProject('moment', '^2.10.6');
+      })
+      .then(function() {
+        app.addBowerPackageToProject('moment-timezone', '^0.4.1');
+      })
+      .then(function() {
+        app.addBowerPackageToProject('reflux', '^0.3.0');
+      })
+      .then(function() {
+        app.addBowerPackageToProject('tessellation-shims', 'atsjj/tessellation-shims#0.1.0');
+      });
   }
 };
