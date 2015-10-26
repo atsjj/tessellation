@@ -4,7 +4,7 @@ import ListenerMixin from 'reflux/listener-mixin';
 import Timer from 'tessellation/components/timer';
 import mixin from 'tessellation/utilities/mixin';
 
-export default class extends mixin(Component, ListenerMixin) {
+class Timer extends mixin(Component, ListenerMixin) {
   getInitialState() {
     return {
       completion: 0
@@ -39,3 +39,5 @@ export default class extends mixin(Component, ListenerMixin) {
     );
   }
 });
+
+export default Timer;

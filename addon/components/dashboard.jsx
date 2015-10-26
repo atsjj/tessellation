@@ -6,7 +6,7 @@ import clone from 'tessellation/utilities/clone-object';
 import createElement from 'react/create-element';
 import mixin from 'tessellation/utilities/mixin';
 
-export default class extends mixin(Component, ListenerMixin) {
+class Dashboard extends mixin(Component, ListenerMixin) {
   getInitialState() {
     return {
       isCurrent: false
@@ -57,3 +57,5 @@ export default class extends mixin(Component, ListenerMixin) {
     );
   }
 });
+
+export default Dashboard;
